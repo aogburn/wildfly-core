@@ -241,7 +241,7 @@ class HttpServerDefinitions {
 
     private static HashMap<String, Function<HttpServerRequest, String>> getRequestInformationHashMap() {
         HashMap<String, Function<HttpServerRequest, String>> requestInformation = new HashMap<>();
-        requestInformation.put(REQUEST_URI, (HttpServerRequest httpServerRequest) -> httpServerRequest.getRequestURI().toString());
+        requestInformation.put(REQUEST_URI, (HttpServerRequest httpServerRequest) -> httpServerRequest.getRequestURIString());
         return requestInformation;
     }
 
